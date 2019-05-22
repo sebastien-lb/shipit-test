@@ -15,8 +15,8 @@ const pokemonIds = [0,1,2,3,4,5,6,7,8,9];
 function PokemonList() {
   return (
     <div className="App">
-          <header className="App-header">
-          </header>
+          {/* <header className="App-header">
+          </header> */}
             {pokemonIds.map(id => 
               <Link to={`/details/${id}`}>
               <Pokemon key={`pokemon-${id}`} id={id}/>
