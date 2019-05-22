@@ -31,6 +31,8 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      # update react-create-app
+      - run: npm install -g create-react-app
       # run tests!
       - run: npm test
       - run: npm run build
