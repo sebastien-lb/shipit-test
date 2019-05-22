@@ -28,7 +28,7 @@ export class Pokemon extends React.Component {
             <div>
                 {this.state.pokemon ? 
                     [<div key="1">
-                        <img src={this.state.pokemon.sprites.front_default} />
+                        <img src={this.state.pokemon.sprites.front_default} alt={"Pokemon"}/>
                     </div>,
                     <div key="2">
                         <span>{this.state.pokemon.name}</span>
